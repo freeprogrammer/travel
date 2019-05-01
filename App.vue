@@ -10,7 +10,7 @@
 import HomeHeader from './components/HomeHeader'
 import HomeSwiper from './components/HomeSwiper'
 import HomeNavigator from './components/HomeNavigator'
-
+import axios from 'axios'
 
 export default {
   name: 'App',
