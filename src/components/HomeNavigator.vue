@@ -85,7 +85,8 @@
 <style lang="stylus" scoped>
 	.wrapper
 		width: 100%
-		height: 20rem
+		height: auto
+		background: #FFF
 		.nav-contain
 			width: 25%
 			margin-top: 0.5%
