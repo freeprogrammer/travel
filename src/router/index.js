@@ -1,14 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Apple from '@/components/Apple'
+import Home from '@/pages/home/Home'
+import City from '@/pages/city/City'
 
 Vue.use(Router)
-
 export default new Router({
   routes: [
     {
       path: '/',
-      component: HomeHeader
+      name: 'Home',
+      component: Home
+    },{
+      path: '/city',
+      name: 'City',
+      component: City
     }
   ]
 })
