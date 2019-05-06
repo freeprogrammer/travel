@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <city-header></city-header>
+    <city-search :cities="cities"></city-search>
     <city-list :cities="cities" :hot="hotcities" :letter="letter"></city-list>
     <city-alpha :cities="cities" @change="handleLetterChange"></city-alpha>
   </div>
@@ -9,7 +10,7 @@
 <script>
 import axios from 'axios'
 import CityHeader from './components/CityHeader'
-import CityCur from './components/CityCur'
+import CitySearch from './components/CitySearch'
 import CityList from './components/CityList'
 import CityAlpha from './components/CityAlpha'
 
@@ -18,7 +19,7 @@ export default {
   components: {
       CityHeader,
       CityList,
-      CityCur,
+      CitySearch,
       CityAlpha
   },
   data(){

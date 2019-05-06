@@ -17,6 +17,8 @@ export default {
   name: 'Home',
   components: {
       HomeHeader,
+      //异步调用 HomeHeader:()=>import('./components/HomeHeader'),
+      //加载越多加载JS文件越多要谨慎 除非APP.js项目很庞大的时候才用
       HomeSwiper,
       HomeNavigator,
       HomeRecommend
